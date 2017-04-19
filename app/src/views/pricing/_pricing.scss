@@ -1,0 +1,18 @@
+.pricing-bg {
+  background-image: url('../assets//pricing/machine_brain.jpg');
+  background-position: 50% 0 !important;
+}
+
+section#pricing {
+  img {
+    margin-right: 15px;
+  }
+
+  > div {
+    padding-bottom: 10px;
+  }
+
+  .pricing-info {
+    margin-top: 15px;
+  }
+}

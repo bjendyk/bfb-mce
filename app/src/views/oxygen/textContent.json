@@ -1,0 +1,30 @@
+{
+    "oxygen": {
+        "items": [
+            {
+                "image": "assets/oxygen/oxygen1_150.jpg",
+                "content": "<span class=\"therapy\">Terapia</span><span class=\"oxygen\">TLENOWA</span> to uznana naukowo metoda, która stymuluje odtruwanie organizmu, odmładza i aktywuje siły witalne i odpornościowe. Badania naukowe wykazały, że niedostateczna ilość tlenu w organizmie prowadzi do powtarzających się infekcji, alergii, niewydolności układu krążenia, wyczerpania organizmu i wielu innych chorób."
+            },
+            {
+                "image": "assets/oxygen/oxygen2_150.jpg",
+                "content": "<span class=\"therapy\">Terapia</span><span class=\"oxygen\">TLENOWA</span> jest bardzo rozpowszechniona w Europie i na świecie, a zwłaszcza w USA i Japonii. Dziś z zabiegów tlenoterapii korzystają nie tylko olimpijczycy, znane na świecie kluby sportowe, ludzie show-biznesu, lecz coraz więcej <i>zwykłych ludzi</i> mających świadomość, jak ważne jest dobre zdrowie w codziennym funkcjonowaniu."
+            }
+        ]
+    },
+    "about": {
+        "items": [
+            {
+                "image": "assets/oxygen/oxygen3_150.jpg",
+                "content": "Jest to odnowa biologiczna organizmu na poziomie komórkowym. Powoduje optymalne natlenienie wszystkich tkanek, co w rezultacie przekłada się na doskonałe samopoczucie oraz dobry stan zdrowia. Systematyczna tlenoterapia opóźnia procesy starzenia i wydłuża życie co najmniej o 10 lat."
+            },
+            {
+                "image": "assets/oxygen/oxygen4_150.jpg",
+                "content": "<span class=\"therapy\">Terapia</span><span class=\"oxygen\">TLENOWA</span> jako kosmetyka tlenowa <b>od wewnątrz</b> jest znacznie skuteczniejsza od tradycyjnych metod w salonach piękności - odmładza skórę, wygładza zmarszczki, usuwa zmęczenie i skutki stresu. Leczy również różnego rodzaju dolegliwości skórne - drobne zapalenia, trądzik, oparzenia, odmrożenia, łuszczycę, itp."
+            },
+            {
+                "image": "assets/oxygen/oxygen5_150.jpg",
+                "content": "Nasz punkt <span class=\"therapy\">Terapii</span><span class=\"oxygen\">TLENOWEJ</span> został uruchomiony w czerwcu 2013 roku. Jest to pierwsze i jedyne centrum terapii tlenowej w Mysłowicach i jedno z nielicznych na Śląsku. Dysponujemy nowoczesnym sprzętem firmy <a href=\"http://www.kroeber.de/site/kroeber_4_1_e.asp\" target=\"_blank\">Kröber</a>."
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+.bfb-bg-1 {
+  background-image: url('../assets/biofeedback/mind_control.jpg');
+  background-position: 50% 0 !important;
+}
+
+.bfb-bg-2 {
+  background-image: url('../assets/biofeedback/neuron3_1920.jpg');
+}
+
+.bfb-bg-3 {
+  background-image: url('../assets/biofeedback/brainwaves.jpg');
+}
+
+.text-content {
+
+  .bfb-timing-item:last-of-type {
+    margin-top: 10px;
+  }
+
+  .bfb-timing-item, .bfb-application-item {
+    h3 {
+      margin-top: 1px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .bfb-target-item {
+    margin-top: 20px;
+  }
+}

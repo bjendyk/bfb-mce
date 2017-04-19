@@ -1,0 +1,140 @@
+@import '../assets/_variables';
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $accent-color;
+}
+
+a:visited {
+    color: $dark-blue-color;
+}
+
+md-list-item > button {
+    width: 100%;
+    text-align: left !important;
+}
+
+md-list .md-button.selected {
+    color: $accent-color;
+}
+
+md-sidenav {
+    md-list {
+        padding: 0;
+    }
+
+    div#quick-phones {
+        padding-top: 0px;
+    }
+}
+
+.bio {
+    color: $dark-blue-color;
+    font-weight: 900;
+}
+
+.therapy {
+    color: $dark-blue-color; 
+}
+
+.feedback {
+    color: $light-blue-color;
+}
+
+.oxygen {
+    color: $light-blue-color;
+    font-weight: 900;
+}
+
+.logo {
+    height: 24px;
+    margin-left: 5px;
+}
+
+.md-button > img {
+    vertical-align: middle;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.18);
+  width: 100%;
+}
+
+.mesh {
+    background: url('../assets/mesh.png');
+}
+
+.section-title {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+
+.section-bg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  max-height: 1200px;
+}
+
+.subsection-bg {
+  height: 50%;
+  max-height: 600px;
+}
+
+.subsection-bg-sm {
+  height: 25%;
+  max-height: 300px;
+}
+
+.info-text {
+    font-size: 14px;
+}
+
+.text-content {
+    text-align: justify;
+
+    .content-regular {
+        min-height: 100px;
+        background-color: $regular-block-bg-color;
+    }
+
+    .content-alt {
+        min-height: 100px;
+        background-color: $alt-block-bg-color;
+    }
+
+    img:not(.icon) {
+        opacity: 0.67;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+
+    img.icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+    }
+
+    img#minimap {
+        opacity: 0.75;
+    }
+}
+
+@import 'views/_views';
+@import 'components/_components';

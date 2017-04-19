@@ -1,0 +1,18 @@
+.contact-bg {
+    background-image: url('../assets//contact/myslowice_blue.jpg');
+}
+
+section#contact {
+    text-align: justify;
+
+    .info-icon {
+        width: 24px;
+        height: 24px;
+        padding-right: 15px;
+    }
+
+    div#bfb-contact, div#oxygen-contact {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

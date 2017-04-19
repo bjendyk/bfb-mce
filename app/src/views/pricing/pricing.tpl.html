@@ -1,0 +1,54 @@
+<section layout="row" class="section-bg pricing-bg">
+    <div layout="column" flex layout-align="center center" class="mesh">
+        <div layout="column" flex layout-align="center center" class="overlay">
+            <div layout="column" flex layout-align="center center">
+                <div layout="row" class="section-title">
+                    CENNIK
+                </div>
+            </div>
+            <bfb-smooth-scroller title="zobacz ceny" target="#pricing"></bfb-smooth-scroller>
+        </div>
+    </div>
+</section>
+<section id="pricing" layout-gt-sm="row" layout-align="center" layout-sm="column" class="text-content">
+    <div flex-gt-sm="50" layout="column" class="content-regular">
+        <div layout="row" layout-align="center">
+            <h3 class="md-headline">
+                <span><span class="bio">BIO</span><span class="feedback">feedback</span></span>
+            </h3>
+        </div>
+        <div layout="row" layout-align="start center" ng-repeat="item in ctrl.bfbPricing">
+            <div flex="20" layout="row" layout-align="end">
+                <img class="icon" ng-src="assets/icons/{{item.icon}}.svg" />
+            </div>
+            <div flex="60">{{ item.title }}</div>
+            <md-button flex="20" class="md-raised md-primary">{{ item.price }} zł</md-button>
+        </div>
+    </div>
+
+    <div flex-gt-sm="50" layout="column" class="content-alt">
+        <div layout="row" layout-align="center">
+            <h3 class="md-headline">
+                <span><span class="therapy">Terapia</span><span class="oxygen">TLENOWA</span></span>
+            </h3>
+        </div>
+        <div layout="row" layout-align="start center" ng-repeat="item in ctrl.oxygenPricing">
+            <div flex="20" layout="row" layout-align="end">
+                <img class="icon" ng-src="assets/icons/{{item.icon}}.svg" />
+            </div>
+            <div flex="60">{{ item.title }}</div>
+            <md-button flex="20" class="md-raised md-primary">{{ item.price }} zł</md-button>
+        </div>
+        <div layout="row" layout-align="start start" class="pricing-info">
+            <div flex="20" layout="row" layout-align="end">
+                <img class="icon" ng-src="assets/icons/info_outline.svg" />
+            </div>
+            <div flex="60" class="info-text">
+                Maseczka lub kaniula to osobisty zakup jednorazowy, umożliwiający wielokrotne korzystanie
+                z zabiegów.
+            </div>
+            <div flex="20"></div>
+        </div>
+    </div>
+</section>
+<bfb-footer></bfb-footer>

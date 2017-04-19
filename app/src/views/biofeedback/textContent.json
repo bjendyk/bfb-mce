@@ -1,0 +1,40 @@
+{
+    "biofeedback": {
+        "items": [
+            {
+                "image": "assets/biofeedback/brain2_150.jpg",
+                "content": "Dzięki pracy naukowców z całego świata udało się ustalić wzorzec prawidłowej czynności bioelektrycznej mózgu oraz opracować skuteczną, bezpieczną i niefarmakologiczną metodę regulacji tej czynności: EEG-BIOFEEDBACK. Powstała ona w latach 60-tych w ośrodkach szkolenia astronautów w NASA, a nastepnie została wprowadzona do medycyny klinicznej, szkolnej, sportowej, medycyny pracy, psychologii, pedegogiki, rehabilitacji, logopedii i dalszych dziedzin."
+            },
+            {
+                "image": "assets/biofeedback/neuron2_150.jpg",
+                "content": "Mózg człowieka zdolny jest uczyć się i przeprogramować nawet w przypadku bardzo zaburzonego funkcjonowania - treningi nie tylko porawiają pamięć i koncentrację uwagi, redukują stres, podnoszą samoocenę, świetne rezultaty uzyskuje się również w terapii ADHD, ADD, terapii uzależnień, w stanach po udarze mózgu i w leczeniu innych poważnych zaburzeń neurologicznych."
+            },
+            {
+                "image": "assets/biofeedback/neuron_150.jpg",
+                "content": "Za pomocą metody <span><span class=\"bio\">BIO</span><span class=\"feedback\">feedback</span></span> trenowany uczy się korygowania pracy swojego mózgu. Zmienia pozytywnie wzorce wytwarzanych fal mózgowych poprzez wzmacnianie pożądanych i hamowanie niepożądanych zakresów fal, co łączy się z pozytywnymi zmianami umysłu i zachowania. Wzorce fal mózgowych łączą się ze stanami zachowania. Optymalizacja pracy mózgu to optymalizacja funkcjonowania całego ciała, mózg jest bowiem najwyższym piętrem kontroli i dowodzenia wszystkimi funkcjami organizmu."
+            }
+        ]
+    },
+    "about": {
+        "items": [
+            {
+                "content": "Daje szanse doskonalenia i zwiększania efektywności pracy mózgu, przez co przyspiesza procesy uczenia się i zapamiętywania, zwiększa zdolność koncentracji oraz redukuje poziom stresu. Równocześnie stwarza ogromne możliwości w leczeniu zaburzeń <b>neurologicznych</b>, <b>psychiatrycznych</b> i <b>psychosomatycznych</b>. Biofeedback jest wpisany na listę <i>Międzynarodowej Klasyfikacji Procedur Medycznych (ICD)</i> z kodem <a href=\"http://www.icd10data.com/ICD10PCS/Codes/G/Z/C/9/GZC9ZZZ\" taget=\"_blank\">GZC9ZZZ</a>."
+            },
+            {
+                "content": "Treningi <span><span class=\"bio\">BIO</span><span class=\"feedback\">feedback</span></span> poprawiają koncentrację uwagi i jej utrzymywanie, pamięć, twórczość, skuteczność pracy i błyskotliwość, podnoszą samoocenę i pewność siebie, znoszą lęk i tremę przed wystąpieniami, poprawiają stan zdrowia, nastrój i zasób energii, uczą wyciszenia i szybkiej relaksacji, regenerują siły, oczyszczają umysł, zwiększają czujność w stanie czuwania, zaś we śnie poprawiają jego architekturę."
+            }
+        ]
+    },
+    "training": {
+        "items": [
+            {
+                "image": "assets/biofeedback/bfb_therapy_2_150.jpg",
+                "content": "Trenowany siedzi wygodnie w fotelu, nogi na podnóżku, na jego głowę zakłada się małe czujniki, które odbierają sygnał EEG. Informacja o stanie swoich fal mózgowych jest podawana trenowanemu <b>wzrokowo</b> w formie prostej gry wideo, <b>słuchowo</b> w postaci sygnałów dźwiękowych oraz możliwa jest informacja <b>dotykowa</b> (wibracja pod dłonią). W ten sposób pacjent otrzymuje sprzężenie zwrotne drogą wzrokową, słuchową lub dotykową."
+            },
+            {
+                "image": "assets/biofeedback/bfb_therapy_3_150.jpg",
+                "content": "Równocześnie fale są analizowane przez prowadzącego trening neuroterapeutę, który pracuje przed drugim monitorem niewidocznym dla trenowanego i stymuluje mózg pacjenta do uzyskiwania coraz lepszych wyników. Następuje poprawa parametrów pracy mózgu. Pozytywnie rozbudzony mózg dąży do nagrody i w ten sposób optymalizuje swą pracę w procesie <b>samouczenia się.</b>"
+            }    
+        ]
+    }
+}

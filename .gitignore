@@ -1,0 +1,21 @@
+### Node template
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+# build output
+build
+
+# IDE
+.vscode
+.idea
+
+# code coverage
+artifacts
+
+# npmrc
+.npmrc

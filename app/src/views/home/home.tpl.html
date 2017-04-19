@@ -1,0 +1,17 @@
+<section layout="row" class="section-bg home-bg-1">
+    <div layout="column" flex layout-align="center center" class="mesh">
+        <div layout="column" flex layout-align="center center" class="overlay">
+            <div layout="column" flex layout-align="center center">
+                <div layout="row" class="section-title">
+                    <b>BIO</b><span class="feedback">feedback</span>&nbsp;//&nbsp;MYSŁOWICE
+                </div>
+            </div>
+            <bfb-smooth-scroller title="przewiń" target="#welcome"></bfb-smooth-scroller>
+        </div>
+    </div>
+</section>
+<section id="welcome" class="text-content" layout="column">
+    <text-content ng-repeat="textContentItem in ctrl.sections.welcome.items" item="textContentItem" is-alternate="$index % 2 === 1">
+    </text-content>
+</section>
+<bfb-footer></bfb-footer>

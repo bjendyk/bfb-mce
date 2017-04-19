@@ -1,0 +1,122 @@
+<section layout="row" class="section-bg bfb-bg-1">
+    <div layout="column" flex layout-align="center center" class="mesh">
+        <div layout="column" flex layout-align="center center" class="overlay">
+            <div layout="column" flex layout-align="center center">
+                <div layout="row" class="section-title">
+                    TERAPIA&nbsp;<b>BIO</b><span class="feedback">feedback</span>
+                </div>
+            </div>
+            <bfb-smooth-scroller title="przewiń" target="#biofeedback"></bfb-smooth-scroller>
+        </div>
+    </div>
+</section>
+<section id="biofeedback" class="text-content" layout="column">
+    <text-content ng-repeat="textContentItem in ctrl.sections.biofeedback.items" item="textContentItem" is-alternate="$index % 2 === 1">
+    </text-content>
+</section>
+
+<section layout="row" class="section-bg subsection-bg bfb-bg-2">
+    <div layout="column" flex layout-align="center center" class="mesh">
+        <div layout="column" flex layout-align="center center" class="overlay">
+            <div layout="row" class="section-title">
+                CZYM JEST&nbsp;<b>BIO</b><span class="feedback">feedback</span>?
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-content" layout="column">
+    <div layout="row" class="content-regular" layout-align="center">
+        <div layout="row" flex-xs="90" flex-sm="70" flex-gt-sm="60" layout-padding>
+            <h1 class="md-headline bfb-definition">
+                <span><span class="bio">BIO</span><span class="feedback">feedback</span></span>
+                jest to metoda regulacji czynności bioelektrycznej mózgu. Ma na celu <b>wzmocnienie</b> tych czynności, które
+                są <b>pożądane</b>, a <b>wyhamowanie</b> tych, które
+                <b>nie powinny</b> występować.
+            </h1>
+        </div>
+    </div>
+    <text-content ng-repeat="textContentItem in ctrl.sections.about.items" item="textContentItem" is-alternate="$index % 2 === 0">
+    </text-content>
+</section>
+
+<section layout="row" class="section-bg subsection-bg bfb-bg-3">
+    <div layout="column" flex layout-align="center center" class="mesh">
+        <div layout="column" flex layout-align="center center" class="overlay">
+            <div layout="row" class="section-title">
+                JAK WYGLĄDA TRENING?
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-content" layout="column">
+    <div layout="row" class="content-regular" layout-align="center center">
+        <div layout-xs="column" layout-gt-xs="row" layout-align-xs="center center" layout-align-gt-xs="start" flex-xs="90" flex-sm="70"
+            flex-gt-sm="60" layout-padding>
+            <div flex-order-xs="0" layout="row" layout-align="center">
+                <img class="rounded-img" src="assets/biofeedback/bfb_therapy_1_150.jpg">
+            </div>
+            <div flex-order-xs="1" layout="column" layout-align="center">
+                <div layout="row" ng-repeat="item in ctrl.bfbTiming" class="bfb-timing-item">
+                    <img class="icon" ng-src="assets/icons/{{item.icon}}.svg" />
+                    <div layout="column">
+                        <h3 class="md-title">{{ item.title }}</h3>
+                        <div class="md-body-1">{{ item.text }}</div>
+                        <div class="md-caption">{{ item.subtext }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <text-content ng-repeat="textContentItem in ctrl.sections.training.items" item="textContentItem" is-alternate="$index % 2 === 0">
+    </text-content>
+</section>
+
+<section layout="row" class="section-bg subsection-bg bfb-bg-3">
+    <div layout="column" flex layout-align="center center" class="mesh">
+        <div layout="column" flex layout-align="center center" class="overlay">
+            <div layout="row" class="section-title">
+                DLA KOGO?
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-content" layout="row" layout-align="center" layout-padding>
+    <div layout="row" flex-xs="90" flex-sm="70" flex-gt-sm="60">
+        <div layout="column">
+            <div>
+                Terapia <span><span class="bio">BIO</span><span class="feedback">feedback</span></span> jest przeznaczona:
+            </div>
+            <div layout="row" layout-align="start" ng-repeat="item in ctrl.bfbTarget" class="bfb-target-item">
+                <img class="icon" ng-src="assets/icons/{{item.icon}}.svg" />
+                <div>{{ item.text }}</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section layout="row" class="section-bg subsection-bg bfb-bg-3">
+    <div layout="column" flex layout-align="center center" class="mesh">
+        <div layout="column" flex layout-align="center center" class="overlay">
+            <div layout="row" class="section-title">
+                WSKAZANIA KLINICZNE
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-content" layout="row" layout-align="center">
+    <div layout="row" flex-xs="90" flex-sm="70" flex-gt-sm="60">
+        <div layout="column" layout-padding>
+            <div layout="row" layout-align="start" ng-repeat="item in ctrl.bfbApplications" class="bfb-application-item">
+                <img class="icon" ng-src="assets/icons/done.svg" />
+                <div layout="column">
+                    <div class="md-title">{{ item.title }}</div>
+                    <div class="md-body-1" ng-if="item.text">{{ item.text }}</div>
+                </div>
+            </div>
+            <div>
+                W uzasadnionych przypadkach istnieje możliwość przeprowadzenia terapii w domu pacjenta.
+            </div>
+        </div>
+    </div>
+</section>
+<bfb-footer></bfb-footer>

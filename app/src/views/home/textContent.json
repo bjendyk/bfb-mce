@@ -1,0 +1,18 @@
+{
+    "welcome": {
+        "items": [
+            {
+                "image": "assets/home/home1_150.jpg",
+                "content": "Witamy Państwa serdecznie w naszym serwisie internetowym. Zapraszamy do zapoznania się z naszą ofertą w zakresie prowadzonych przez nas terapii <a href=\"/#!/biofeedback\"><span class=\"bio\">BIO</span><span class=\"feedback\">feedback</span></a> oraz <a href=\"/#!/oxygen\"><span class=\"therapy\">Terapii</span><span class=\"oxygen\">TLENOWEJ</span></a>."
+            },
+            {
+                "image": "assets/home/home2_150.jpg",
+                "content": "Istniejemy od 2009 roku. Terapie prowadzone są przez dyplomowanych neuroterapeutów. Pracownia wyposażona jest w specjalistyczny sprzęt certyfikowany przez <a href=\"http://eeginstytut.pl\" target=\"_blank\">Instytut EEG BIOFEEDBACK</a> w Warszawie."
+            },
+            {
+                "image": "assets/home/home3_150.png",
+                "content": "Nasz gabinet mieści się w Mysłowicach przy ul. <b>Wojska Polskiego 7</b> - w centrum miasta, z dogodnym dojazdem z miast sąsiadujących, takich jak Katowice, Sosnowiec, Jaworzno, Tychy."
+            }
+        ]
+    }
+}

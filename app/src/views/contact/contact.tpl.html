@@ -1,0 +1,99 @@
+<section layout="row" class="section-bg contact-bg">
+    <div layout="column" flex layout-align="center center" class="mesh">
+        <div layout="column" flex layout-align="center center" class="overlay">
+            <div layout="column" flex layout-align="center center">
+                <div layout="row" class="section-title" layout-align="start center">
+                    <img class="icon" ng-src="assets/icons/place.svg" />
+                    <div ng-bind-html="ctrl.address"></div>
+                </div>
+            </div>
+            <bfb-smooth-scroller title="mapa i telefony" target="#contact"></bfb-smooth-scroller>
+        </div>
+    </div>
+</section>
+<section id="contact" layout="column">
+    <div layout="column" layout-margin>
+        <div map-lazy-load map-lazy-load-params="{{ctrl.googleMapsUrl}}">
+            <ng-map center="[{{ctrl.mapOptions.lat}},{{ctrl.mapOptions.lng}}]" zoom="{{ctrl.mapOptions.zoom}}">
+                <marker position="[{{ctrl.mapOptions.lat}},{{ctrl.mapOptions.lng}}]"></marker>
+            </ng-map>
+        </div>
+        <div>
+            Szczegółowa informacja oraz rejestracja pod następującymi numerami telefonów:
+        </div>
+    </div>
+
+    <div flex="grow" layout-gt-sm="row" layout-align-gt-sm="center" layout-sm="column">
+
+        <div id="bfb-contact" layout="column">
+            <h2 class="md-headline"><span class="bio">BIO</span><span class="feedback">feedback</span></h2>
+
+            <!-- extra small, small -->
+            <div class="hide-gt-sm" layout="row" layout-align="start center">
+                <img class="icon" ng-src="assets/icons/smartphone.svg" />
+                <md-button class="md-primary md-raised md-hue-1" ng-href="tel:{{ctrl.bfbPhone2.phone}}">
+                    {{ctrl.bfbPhone2.display}}
+                </md-button>
+                <md-button class="md-primary md-raised md-hue-1" ng-href="tel:{{ctrl.bfbPhone1.phone}}">
+                    {{ctrl.bfbPhone1.display}}
+                </md-button>
+            </div>
+
+            <!-- medium and up -->
+            <div class="hide-sm hide-xs" layout="row" layout-align="start center">
+                <img class="icon" ng-src="assets/icons/smartphone.svg" />
+                <md-button class="md-primary">{{ctrl.bfbPhone2.display}}, {{ctrl.bfbPhone1.display}}</md-button>
+            </div>
+
+            <div flex layout="row" layout-align="start center">
+                <img class="icon" ng-src="assets/icons/email.svg" />
+                <md-button class="md-primary" ng-href="mailto:{{ctrl.bfbEmail}}">
+                    {{ctrl.bfbEmail}}
+                </md-button>
+            </div>
+        </div>
+
+        <div id="oxygen-contact" layout="column">
+            <h2 class="md-headline"><span class="therapy">Terapia</span><span class="oxygen">TLENOWA</span></h2>
+            <!-- extra small, small -->
+            <div class="hide-gt-sm" layout="row" layout-align="start center">
+                <img class="icon" ng-src="assets/icons/smartphone.svg" />
+                <md-button class="md-primary md-raised md-hue-1" ng-href="tel:{{ctrl.oxygenPhone.phone}}">
+                    {{ctrl.oxygenPhone.display}}
+                </md-button>
+            </div>
+
+            <!-- medium and up -->
+            <div class="hide-sm hide-xs" layout="row" layout-align="start center">
+                <img class="icon" ng-src="assets/icons/smartphone.svg" />
+                <md-button class="md-primary">{{ctrl.oxygenPhone.display}}</md-button>
+            </div>
+
+            <div flex layout="row" layout-align="start center">
+                <img class="icon" ng-src="assets/icons/email.svg" />
+                <md-button class="md-primary" href="mailto:{{ctrl.oxygenEmail}}">
+                    {{ctrl.oxygenEmail}}
+                </md-button>
+            </div>
+        </div>
+    </div>
+
+    <div layout-margin>
+        <div layout="row" layout-align="start">
+            <div flex="15" layout="row" layout-align="end">
+                <img class="info-icon" ng-src="assets/icons/info_outline.svg" />
+            </div>
+            <div flex="70" class="info-text">
+                <div>
+                    Uprzejmie informujemy, że podczas trwania terapii nie możemy odbierać telefonów. W takich przypadkach zawsze oddzwaniamy
+                    do Państwa w jak najkrótszym czasie.
+                </div>
+                <div>
+                    <b>Godziny przyjęć ustalane są indywidualnie.</b>
+                </div>
+            </div>
+            <div flex="15"></div>
+        </div>
+    </div>
+</section>
+<bfb-footer></bfb-footer>

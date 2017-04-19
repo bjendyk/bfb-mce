@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Biofeedback, terapia adhd, terapia tlenowa</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- build:metaDescription -->
+    <!-- endbuild -->
+    <!-- build:metaKeywords -->
+    <!-- endbuild -->
+
+    <meta name="robots" content="all">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="2 days">
+
+    <!-- CSP -->
+    <meta http-equiv="content-security-policy" content="connect-src 'self' google.com maps.googleapis.com fonts.googleapis.com maps.gstatic.com; script-src 'self' 'unsafe-inline' fonts.googleapis.com google.com maps.gstatic.com maps.googleapis.com 'unsafe-eval' fonts.googleapis.com google.com maps.gstatic.com maps.googleapis.com; object-src 'self'">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <!-- 3rd party CSS -->
+    <!-- build:thirdPartyCss -->
+    <!-- endbuild -->
+
+    <!-- 1st party CSS -->
+    <!-- build:firstPartyCss -->
+    <!-- endbuild -->
+</head>
+
+<body ng-app="bfbApp" layout="column" ng-controller="MainCtrl as ctrl" ng-cloak>
+    <md-sidenav ng-click="ctrl.toggleSidenav('left')" md-component-id="left" class="md-sidenav-left md-whiteframe-z2">
+        <md-toolbar layout="row" layout-align="start center">
+            <md-button class="md-icon-button">
+                <img src="assets/icons/arrow_back.svg" />
+            </md-button>
+            <img src="assets/bfb_logo.png" class="logo" />
+        </md-toolbar>
+        <md-list>
+            <md-list-item ng-repeat="item in ctrl.navItems">
+                <md-button ng-click="ctrl.navigateTo(item)" class="selected">
+                    {{item.name}}
+                </md-button>
+            </md-list-item>
+        </md-list>
+        <div id="quick-phones" layout="column" ng-controller="SidenavCtrl as navCtrl" layout-padding>
+            <div layout="column" layout-align="start center">
+                <div class="md-body-2"><span class="bio">BIO</span><span class="feedback">feedback</span></div>
+                <a class="md-button md-primary md-raised md-hue-1" ng-href="tel:{{navCtrl.bfbPhone2.phone}}">
+                    <img src="assets/icons/phone.svg" /> {{navCtrl.bfbPhone2.display}}
+                </a>
+                <a class="md-button md-primary md-raised md-hue-1" ng-href="tel:{{navCtrl.bfbPhone1.phone}}">
+                    <img src="assets/icons/phone.svg" /> {{navCtrl.bfbPhone1.display}}
+                </a>
+            </div>
+
+            <div layout="column" layout-align="start center">
+                <div class="md-body-2"><span class="therapy">Terapia</span><span class="oxygen">TLENOWA</span></div>
+                <a class="md-button md-primary md-raised md-hue-1" ng-href="tel:{{navCtrl.oxyPhone.phone}}">
+                    <img src="assets/icons/phone.svg" /> {{navCtrl.oxyPhone.display}}
+                </a>
+            </div>
+        </div>
+    </md-sidenav>
+
+    <div flex layout="column" du-scroll-container>
+        <md-toolbar class="md-whiteframe-z2" layout="row" layout-align="start center">
+            <md-button class="md-icon-button hide-gt-sm" ng-click="ctrl.toggleSidenav('left')" aria-label="Show Navigation">
+                <img src="assets/icons/menu.svg" />
+            </md-button>
+            <img src="assets/bfb_logo.png" class="logo" />
+
+            <div flex layout="row" layout-align="end" class="hide-sm hide-xs">
+                <md-nav-bar md-selected-nav-item="ctrl.currentNavItem" nav-bar-aria-label="navigation links" class="nav-links">
+                    <md-nav-item ng-repeat="item in ctrl.navItems" md-nav-click="ctrl.navigateTo(item)" name="{{item.state}}">
+                        <span>{{item.name}}</span>
+                    </md-nav-item>
+                </md-nav-bar>
+            </div>
+        </md-toolbar>
+        <md-content flex du-scroll-container>
+            <ui-view flex autoscroll="true"></ui-view>
+        </md-content>
+    </div>
+</body>
+
+<!-- 3rd party JS -->
+<!-- build:thirdPartyJs -->
+<!-- endbuild -->
+
+<!-- 1st party JS -->
+<!-- build:firstPartyJs -->
+<!-- endbuild -->
+
+</html>

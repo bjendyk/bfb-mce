@@ -1,0 +1,12 @@
+<div layout="row" layout-align="center" ng-class="$ctrl.isAlternate ? 'content-alt' : 'content-regular'">
+    <div layout-xs="column" layout-gt-xs="row" layout-align-xs="center center" layout-align-gt-xs="start" flex-xs="90" flex-sm="70"
+        flex-gt-sm="60" layout-padding>
+        <div ng-if="$ctrl.item.image" flex-order-xs="0" flex-order-gt-xs="{{$ctrl.imageOrderInRow}}" layout="row" layout-align="center">
+            <img ng-src="{{$ctrl.item.image}}">
+        </div>
+        <div layout="column" layout-align="center" flex-order-xs="1" flex-order-gt-xs="{{$ctrl.textOrderInRow}}">
+            <div ng-bind-html="$ctrl.item.content">
+            </div>
+        </div>
+    </div>
+</div>
